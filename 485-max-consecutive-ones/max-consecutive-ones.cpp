@@ -7,13 +7,12 @@ public:
         while(i<nums.size()){
             if(nums[i]!=0){
                 count++;
-                i++;
             }
             else{
                 high=max(high,count);
                 count=0;
-                i++;
             }
+            i++;
         }
         high=max(high,count);
         return high;
