@@ -4,7 +4,7 @@ public:
         int pc=0;
         int nc=1;
         int size1=nums.size();
-        vector<int> v2(size1, 0);
+        vector<int> v2(size1);
         for(int i=0;i<size1;i++){
             if(nums[i]>0){
                 v2[pc]=nums[i];
