@@ -19,14 +19,14 @@ public:
                     break;
                 }
             }
-            reverse(nums.begin() + j+1, nums.begin() + (n-1) + 1);
+            reverse(nums.begin() + j+1, nums.end());
 
             for(int i=0;i<n;i++){
                 cout<<nums[i];
             }
         }
         else{
-            reverse(nums.begin() + 0, nums.begin() + (n-1) + 1);
+            reverse(nums.begin() , nums.end());
             for(int i=0;i<n;i++){
                 cout<<nums[i];
             }
